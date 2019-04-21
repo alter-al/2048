@@ -1,9 +1,10 @@
 package me.veryyoung.game2048;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.Window;
 
@@ -20,6 +21,7 @@ public class MainActivity extends Activity {
 	public static final String GAME_STATE = "game state";
 	public static final String UNDO_GAME_STATE = "undo game state";
 
+	@SuppressLint("ResourceType")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

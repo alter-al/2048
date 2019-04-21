@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+
+    <LinearLayout
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Would"
+            android:textColor="#ffa500 "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="you"
+            android:textColor="#000000 "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="like"
+            android:textColor="#ff0000 "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="to"
+            android:textColor="#ff00ff "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="check"
+            android:textColor="#3233f0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="this"
+            android:textColor="#999fff "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="view?"
+            android:textColor="#f1f1 "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="50dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="76dp">
+
+        <Button
+            android:id="@+id/button"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Yeap"
+            tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="416dp"/>
+        <Button
+            android:id="@+id/button2"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Nope"
+            tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="414dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

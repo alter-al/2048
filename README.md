@@ -1,13 +1,19 @@
-2048
-====
+Purpose
+------------
 
+I took an app [Android-2048](https://github.com/veryyoung/2048) as a sample to show how ScreenshotTestForAndroid works.
 
-This is a 2048 game to Android.
+Prerequisites
+------------
 
-Based on https://github.com/gabrielecirulli/2048
+    $ pip install mock
+    $ pip install Pillow
 
+Usage
+------------
 
+#### Recording tests
+    $ ./gradlew recordDebugAndroidTestScreenshotTest
 
-![](http://ww1.sinaimg.cn/large/9732f922jw1eziyfcd233j20f00qo3zf.jpg)
-
-#I think nobody can reach the score！！
+#### Executing tests
+    $ ./gradlew verifyDebugAndroidTestScreenshotTest
