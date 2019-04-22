@@ -1,7 +1,7 @@
 Purpose
 ------------
 
-I took an app [Android-2048](https://github.com/veryyoung/2048) as a sample to show how ScreenshotTestForAndroid works.
+I took an app [Android-2048](https://github.com/veryyoung/2048) as a sample to show how [AndroidScreenshotTestCase](https://github.com/facebook/screenshot-tests-for-android) works.
 
 Prerequisites
 ------------
