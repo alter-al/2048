@@ -2,6 +2,7 @@ package me.screenshot.game2048.screenshots
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.rule.ActivityTestRule
+import android.view.LayoutInflater
 import android.view.View
 import com.facebook.testing.screenshot.Screenshot
 import com.facebook.testing.screenshot.ViewHelpers
@@ -34,6 +35,15 @@ class ScreenshotTest {
 
         ViewHelpers.setupView(view).setExactWidthDp(300).setExactHeightDp(500).layout().draw()
         Screenshot.snap(view).setName("2048").record()
+    }
+
+    @Test
+    fun test_Snapshot_With_LayoutInflater() {
+        val targetContext = InstrumentationRegistry.getInstrumentation().targetContext
+        val inflater = LayoutInflater.from(targetContext)
+        val view = inflater.inflate(R.layout.activity_new, null, false)
+        ViewHelpers.setupView(view).setExactWidthDp(300).setExactHeightDp(500).layout()
+        Screenshot.snap(view).record()
     }
 
 }
