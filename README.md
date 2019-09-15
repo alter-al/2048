@@ -14,6 +14,8 @@ Usage
 
 #### Recording tests
     $ ./gradlew recordDebugAndroidTestScreenshotTest
+    $ ./gradlew executeScreenshotTests -Precord
 
 #### Executing tests
     $ ./gradlew verifyDebugAndroidTestScreenshotTest
+    $ ./gradlew executeScreenshotTests
