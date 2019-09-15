@@ -13,7 +13,7 @@ import org.junit.Test
 
 class ScreenshotTest {
     @get:Rule
-    var activityTestRule = ActivityTestRule<NewActivity>(NewActivity::class.java, false, false)
+    var activityTestRule = ActivityTestRule(NewActivity::class.java, false, false)
 
     @Test
     fun test_Snapshot_With_Activity() {
